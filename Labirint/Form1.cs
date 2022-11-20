@@ -20,6 +20,16 @@ namespace Labirint
         const int cellSize = 50;
         private bool isMouse = false;
         public double nikitaDebich;
+
+
+
+
+
+
+
+
+
+
         private Point[] points;
         private class ArrayPoints
         {
