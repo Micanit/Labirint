@@ -18,6 +18,41 @@ namespace Labirint
         static int random_1 = rnd.Next(2, 8);
         const int mapSize = 10;
         const int cellSize = 50;
+        private bool isMouse = false;
+        private Point[] points;
+        private class ArrayPoints
+        {
+            private int index = 0;
+            private Point[] points;
+
+            public ArrayPoints(int size)
+            {
+                if(size<=0) { size = 2; }
+                points = new Point[size];
+            }
+            
+            public void SetPoint(int x,int y)
+            {
+                if (index >= points.Length)
+                {
+                    index = 0;
+                }
+                points[index] = new Point(x, y);
+                index++;
+            }
+            public void ResetPoints()
+            {
+                index = 0;
+            }
+            public int GetCountPoints()
+            {
+                return index;
+            }
+            public Point[]  GetPoints()
+            {
+                return points;
+            }
+        }
         int[,] map = new int[mapSize, mapSize];
         public Form1()
         {
@@ -75,7 +110,7 @@ namespace Labirint
                     grass.SizeMode = PictureBoxSizeMode.StretchImage;
                     grass.Size = new Size(cellSize, cellSize);
                     grass.Location = new Point(i * cellSize, j * cellSize);
-
+                    grass.MouseMove += Grass_MouseMove;
 
                     PictureBox win_grass = new PictureBox();
                     win_grass.Image = Image.FromFile(@"C:\Users\Турбонадув\source\repos\Labirint\Labirint\bin\Textures\win_grass.jpg");
@@ -109,9 +144,11 @@ namespace Labirint
                     {
                         this.Controls.Add(field);
                     }
+
                    
                 }
             }
+
         }
 
         private void Win_grass_MouseEnter(object sender, EventArgs e)
@@ -130,5 +167,31 @@ namespace Labirint
             Cursor.Position = new Point(this.Location.X + cellSize / 2, this.Location.Y+250);
         }
 
+        private ArrayPoints arrayPoints = new ArrayPoints(2);
+        Graphics g;
+        Pen pen = new Pen(Color.Black,3f);
+        Bitmap map1 = new Bitmap(100, 100);
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            isMouse = true;
+        }
+
+        private void Form1_MouseUp(object sender, MouseEventArgs e)
+        {
+            isMouse = false;
+        }
+
+        private void Grass_MouseMove(object sender, MouseEventArgs e)
+        {
+            //if(!isMouse) { return; }
+            arrayPoints.SetPoint(e.X, e.Y);
+            if (arrayPoints.GetCountPoints()>= 2)
+            {
+                g.DrawLines(pen,arrayPoints.GetPoints());
+                
+                arrayPoints.SetPoint(e.X, e.Y);
+            }
+        }
+        
     }
 }
