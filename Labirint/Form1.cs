@@ -25,7 +25,7 @@ namespace Labirint
             private int index = 0;
             private Point[] points;
 
-            public ArrayPoints(int size)
+            public ArrayPoints(int size) 
             {
                 if(size<=0) { size = 2; }
                 points = new Point[size];
@@ -195,3 +195,5 @@ namespace Labirint
         
     }
 }
+
+
