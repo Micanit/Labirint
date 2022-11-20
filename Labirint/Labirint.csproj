@@ -58,11 +58,34 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMenu2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu2.Designer.cs" />
+    <Compile Include="FormMenu24.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu24.Designer.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramMenu2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Настройки.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Настройки.Designer.cs" />
+    <Compile Include="Начать игру.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Начать игру.Designer.cs" />
+    <Compile Include="Помощь.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Помощь.Designer.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu2.resx" />
+    <EmbeddedResource Include="FormMenu24.resx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,6 +95,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Настройки.resx" />
+    <EmbeddedResource Include="Начать игру.resx" />
+    <EmbeddedResource Include="Помощь.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
