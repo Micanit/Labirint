@@ -58,7 +58,8 @@ namespace Labirint
         public Form1()
         {
             this.Text = "Labirintik";
-            InitializeComponent();           
+            InitializeComponent();
+           
             Init();
         }
 
