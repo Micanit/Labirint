@@ -95,7 +95,7 @@ namespace Labirint
                 for (int j = 0; j < mapSize; j++)
                 {
                     PictureBox field = new PictureBox();
-                    field.Image = Image.FromFile(@"C:\Users\Турбонадув\source\repos\Labirint\Labirint\bin\Textures\Wall.jpg");
+                    field.Image = Image.FromFile(@"Wall.jpg");
                     field.SizeMode = PictureBoxSizeMode.StretchImage;
                     field.Size= new Size(cellSize, cellSize);
                     field.Location = new Point(i*cellSize, j*cellSize);
