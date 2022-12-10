@@ -9,3 +9,14 @@ C:\Users\Турбонадув\source\repos\Labirint\Labirint\obj\Debug\Labirint.
 C:\Users\Турбонадув\source\repos\Labirint\Labirint\obj\Debug\Labirint.csproj.CoreCompileInputs.cache
 C:\Users\Турбонадув\source\repos\Labirint\Labirint\obj\Debug\Labirint.exe
 C:\Users\Турбонадув\source\repos\Labirint\Labirint\obj\Debug\Labirint.pdb
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\bin\Debug\Labirint.exe.config
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\bin\Debug\Labirint.exe
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\bin\Debug\Labirint.pdb
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.csproj.AssemblyReference.cache
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.csproj.SuggestedBindingRedirects.cache
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.Form1.resources
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.Properties.Resources.resources
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.csproj.GenerateResource.cache
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.csproj.CoreCompileInputs.cache
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.exe
+C:\Users\Турбонадув\source\repos\Labirint\Labirint_original\Labirint\obj\Debug\Labirint.pdb

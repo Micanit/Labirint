@@ -58,27 +58,27 @@ namespace Labirint
                 for (int j = 0; j < mapSize; j++)
                 {
                     PictureBox field = new PictureBox();
-                    field.Image = Image.FromFile(@"C:\Users\Турбонадув\source\repos\Labirint\Labirint\bin\Textures\Wall.jpg");
+                    field.Image = Properties.Resources.Wall1;
                     field.SizeMode = PictureBoxSizeMode.StretchImage;
                     field.Size= new Size(cellSize, cellSize);
                     field.Location = new Point(i*cellSize, j*cellSize);
 
 
                     PictureBox start_grass = new PictureBox();
-                    start_grass.Image = Image.FromFile(@"C:\Users\Турбонадув\source\repos\Labirint\Labirint\bin\Textures\start_grass.jpg");
+                    start_grass.Image = Properties.Resources.start_grass;
                     start_grass.SizeMode = PictureBoxSizeMode.StretchImage;
                     start_grass.Size = new Size(cellSize, cellSize);
                     start_grass.Location = new Point(i * cellSize, j * cellSize);
 
                     PictureBox grass = new PictureBox();
-                    grass.Image = Image.FromFile(@"C:\Users\Турбонадув\source\repos\Labirint\Labirint\bin\Textures\grass.jpg");
+                    grass.Image = Properties.Resources.grass;  
                     grass.SizeMode = PictureBoxSizeMode.StretchImage;
                     grass.Size = new Size(cellSize, cellSize);
                     grass.Location = new Point(i * cellSize, j * cellSize);
 
 
                     PictureBox win_grass = new PictureBox();
-                    win_grass.Image = Image.FromFile(@"C:\Users\Турбонадув\source\repos\Labirint\Labirint\bin\Textures\win_grass.jpg");
+                    win_grass.Image = Properties.Resources.win_grass;
                     win_grass.SizeMode = PictureBoxSizeMode.StretchImage;
                     win_grass.Size = new Size(cellSize, cellSize);
                     win_grass.Location = new Point(i * cellSize, j * cellSize);
