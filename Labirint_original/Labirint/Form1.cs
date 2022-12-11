@@ -14,10 +14,10 @@ namespace Labirint
     {
                
         static Random rnd = new Random();
-        static int random = rnd.Next(2, 8);
+        static int random = rnd.Next(0, 11);
         static int random_1 = rnd.Next(2, 8);
-        const int mapSize = 10;
-        const int cellSize = 50;
+        const int mapSize = 20;
+        const int cellSize = 35;
         int[,] map = new int[mapSize, mapSize];
         public Form1()
         {
@@ -28,22 +28,106 @@ namespace Labirint
 
         public void Init()
         {
-            map = new int[mapSize, mapSize] {
-                { 0,0,0,0,2,0,0,0,0,0},
-                { 0,1,1,0,1,0,1,1,1,0},
-                { 0,0,1,0,1,0,1,0,1,0},
-                { 0,1,1,1,1,1,0,0,1,0},
-                { 0,1,0,0,0,1,1,1,1,0},
-                { 0,1,0,0,0,0,0,0,0,0},
-                { 0,1,1,1,1,1,1,1,1,0},
-                { 0,0,0,0,0,0,0,0,1,0},
-                { 0,0,0,0,0,1,1,1,1,0},
-                { 0,0,0,0,0,3,0,0,0,0},
-            };
+            /* map = new int[mapSize, mapSize] {
+                 { 0,0,0,0,2,0,0,0,0,0,0},
+                 { 0,1,1,0,1,0,1,1,1,0,0},
+                 { 0,0,1,0,1,0,1,0,1,0,0},
+                 { 0,1,1,1,1,1,0,0,1,0,0},
+                 { 0,1,0,0,0,1,1,1,1,0,0},
+                 { 0,1,0,0,0,0,0,0,0,0,0},
+                 { 0,1,1,1,1,1,1,1,1,0,0},
+                 { 0,0,0,0,0,0,0,0,1,0,0},
+                 { 0,0,0,0,0,1,1,1,1,0,0},
+                 { 0,0,0,0,0,3,0,0,0,0,0},
+                 { 0,0,0,0,0,3,0,0,0,0,0},
+                 { 0,0,0,0,0,3,0,0,0,0,0},
+             };*/
+            CreateLabirint();
             CreateMap();
             
         }
-        
+        public void CreateLabirint()
+        {
+            Random random1 = new Random();
+            int chanse = 35;
+            int start_sprite_index = 2;
+            int end_sprite_index = 3;
+            int y = 1;
+            int x = 1;
+            int current_index = map[x, y];
+            int road_sprite_index = 1;
+            
+            map[x,y] = start_sprite_index;
+
+            //MessageBox.Show("ИЗНАЧАЛЬНЫЙ Y: " + y.ToString() + " ИЗНАЧАЛЬНЫЙ X: " + x.ToString());
+            while (x != mapSize-2)
+            {
+                if (random1.Next(0, 101) <= chanse)
+                {
+                    if (random1.Next(0, 101) <= chanse)
+                    {
+                        if (map[x + 1, y] == 0 && map[x + 1, y + 1] == 0 && map[x + 1, y - 1] == 0 )
+                        {
+                            x++;
+                            if (x<1 || x>mapSize-2)
+                            {
+                                x--;
+                            }
+                            map[x, y] = road_sprite_index;
+
+
+                        }
+                        else
+                        {
+                            if (map[x - 1, y] == 0 && map[x - 1, y + 1] == 0 && map[x - 1, y - 1] == 0)
+                            {
+                                x--;
+                                if (x < 1 || x > mapSize - 2)
+                                {
+                                    x++;
+                                }
+                                map[x, y] = road_sprite_index;
+                            }
+                        }
+                    }
+                    else
+                    {
+
+                        if (random1.Next(0, 101) >= chanse)
+                        {
+                            if (map[x, y + 1] == 0 && map[x + 1, y + 1] == 0 && map[x - 1, y + 1] == 0)
+                            {
+                                y++;
+                                if (y<1 || y > mapSize-2)
+                                {
+                                    y--;
+                                }
+                                map[x, y] = road_sprite_index;
+                            }
+                        }
+                        else
+                        {
+                            if (map[x, y - 1] == 0 && map[x + 1, y - 1] == 0 && map[x - 1, y - 1] == 0)
+                            {
+                                y--;
+                                if (y < 1 || y > mapSize - 2)
+                                {
+                                    y++;
+                                }
+                                map[x, y] = road_sprite_index;
+                            }
+                        }
+                    }
+                }
+                //MessageBox.Show("Y: " + y.ToString() + "  X: " + x.ToString());
+            }
+            map[x, y] = end_sprite_index;
+           
+            //MessageBox.Show("Y: " + y.ToString() + "  X: " + x.ToString());
+            
+            
+            
+        }
         public void CreateMap()
         {
             Random rnd_grass = new Random();
@@ -52,11 +136,14 @@ namespace Labirint
             random_1 = rnd.Next(2, 8);
 
             this.Width = (mapSize* cellSize) +15;
-            this.Height = (mapSize* cellSize) + 15;
+            this.Height = (mapSize* cellSize) + 39;
             for (int i = 0; i < mapSize; i++)
             {
                 for (int j = 0; j < mapSize; j++)
                 {
+                   
+
+
                     PictureBox field = new PictureBox();
                     field.Image = Properties.Resources.Wall1;
                     field.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -93,6 +180,7 @@ namespace Labirint
                         this.Controls.Add(win_grass);
                     }
                     this.Controls.Add(field); */
+
                     if (map[i, j] == 3)
                     {
                         this.Controls.Add(win_grass);
@@ -109,7 +197,9 @@ namespace Labirint
                     {
                         this.Controls.Add(field);
                     }
-                   
+                    
+                    //map[0, rnd.Next(0, mapSize)] = this.Controls.Add(start_grass);
+
                 }
             }
         }
@@ -127,7 +217,7 @@ namespace Labirint
         */
         public void Form1_Load(object sender, EventArgs e)
         {
-            Cursor.Position = new Point(this.Location.X + cellSize / 2, this.Location.Y+250);
+            Cursor.Position = new Point(this.Location.X + cellSize*4 / 2, this.Location.Y+ cellSize*4 / 2);
         }
 
     }
