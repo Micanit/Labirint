@@ -19,6 +19,8 @@ namespace Labirint
         const int mapSize = 20;
         const int cellSize = 35;
         int[,] map = new int[mapSize, mapSize];
+        //
+       
         public Form1()
         {
             this.Text = "Labirintik";
