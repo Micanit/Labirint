@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Labirint
 {
@@ -14,6 +15,7 @@ namespace Labirint
     {
         int min;
         int sec;
+        private string name;
         static Random rnd = new Random();
         static int random = rnd.Next(0, 11);
         static int random_1 = rnd.Next(2, 8);
@@ -307,6 +309,18 @@ namespace Labirint
         {
             Close();
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                name = saveFileDialog.FileName;
+                File.WriteAllText(name, textBox1.Text);
+
+            }
         }
     }
 }
