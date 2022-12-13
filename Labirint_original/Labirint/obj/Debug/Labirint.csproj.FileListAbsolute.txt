@@ -40,3 +40,5 @@ D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.csproj.Genera
 D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.csproj.CoreCompileInputs.cache
 D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.exe
 D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.pdb
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.FormMenu.resources
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.Settings.resources
