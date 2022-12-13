@@ -117,4 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>В каждомуровне есть место старта и выходю Цель игрока дойти до выхода как можно быстреею Изначально игрок уже стартует на метке, нужно провести нажать на кнопку пуска таймера и вести мышью до финиша.
+
+Запрещается пользоваться сторонними программами, упрощающие прохождение уровней! Нарушители будут забанены.</value>
+  </data>
 </root>
