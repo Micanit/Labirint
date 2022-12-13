@@ -14,7 +14,6 @@ namespace Labirint
     {
         int min;
         int sec;
-        int ms;
         static Random rnd = new Random();
         static int random = rnd.Next(0, 11);
         static int random_1 = rnd.Next(2, 8);
@@ -32,7 +31,7 @@ namespace Labirint
             timer1.Interval = 500;
             min = 0;
             sec = 0;
-            ms = 0;
+            
 
             label2.Text = "00";
             label3.Visible = true;
@@ -259,7 +258,7 @@ namespace Labirint
         {
             min = 0;
             sec = 0;
-            ms = 0;
+            
             label2.Text = "00";
             label4.Text = "00";
         }
