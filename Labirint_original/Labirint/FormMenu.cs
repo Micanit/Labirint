@@ -43,5 +43,11 @@ namespace Labirint
             Form1 igra = new Form1();
             igra.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Rules rules = new Rules();
+            rules.ShowDialog();
+        }
     }
 }
