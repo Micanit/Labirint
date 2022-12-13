@@ -12,7 +12,9 @@ namespace Labirint
 {
     public partial class Form1 : Form
     {
-               
+        int min;
+        int sec;
+        int ms;
         static Random rnd = new Random();
         static int random = rnd.Next(0, 11);
         static int random_1 = rnd.Next(2, 8);
@@ -26,6 +28,16 @@ namespace Labirint
             this.Text = "Labirintik";
             InitializeComponent();           
             Init();
+
+            timer1.Interval = 500;
+            min = 0;
+            sec = 0;
+            ms = 0;
+
+            label2.Text = "00";
+            label3.Visible = true;
+            label2.Text = "00";
+
         }
 
         public void Init()
@@ -222,5 +234,74 @@ namespace Labirint
             Cursor.Position = new Point(this.Location.X + cellSize*4 / 2, this.Location.Y+ cellSize*4 / 2);
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(timer1.Enabled)
+            {
+                timer1.Enabled = false;
+                button1.Text = "Пуск";
+                button1.Enabled = true;
+            }
+            else
+            {
+                timer1.Enabled = true;
+                button1.Text = "Стоп";
+                button2.Enabled = false;
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            min = 0;
+            sec = 0;
+            ms = 0;
+            label2.Text = "00";
+            label4.Text = "00";
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if(label3.Visible)
+            {
+                if(sec<59)
+                {
+                    sec++;
+                    if (sec < 10)
+                        label4.Text = "0" + sec.ToString();
+                    else
+                        label4.Text = sec.ToString();
+                }
+                else
+                {
+                    if(min<59)
+                    {
+                        min++;
+                        if(min<10)
+                            label2.Text = "0" + min.ToString();
+                        else
+                            label2.Text = min.ToString();
+
+                        sec = 0;
+                        label4.Text = "00";
+                    }
+                    else
+                    {
+                        min = 0;
+                        label2.Text = "00";                 
+                    }
+                    
+                }
+                label3.Visible = false;
+            }
+            else
+            {
+                label3.Visible = true;
+            }
+        }
     }
 }

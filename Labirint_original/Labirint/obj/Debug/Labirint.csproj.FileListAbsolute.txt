@@ -30,3 +30,13 @@ C:\labirint\Labirint_original\Labirint\obj\Debug\Labirint.csproj.GenerateResourc
 C:\labirint\Labirint_original\Labirint\obj\Debug\Labirint.csproj.CoreCompileInputs.cache
 C:\labirint\Labirint_original\Labirint\obj\Debug\Labirint.exe
 C:\labirint\Labirint_original\Labirint\obj\Debug\Labirint.pdb
+D:\лабиринт2\Labirint_original\Labirint\bin\Debug\Labirint.exe.config
+D:\лабиринт2\Labirint_original\Labirint\bin\Debug\Labirint.exe
+D:\лабиринт2\Labirint_original\Labirint\bin\Debug\Labirint.pdb
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.csproj.AssemblyReference.cache
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.Form1.resources
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.Properties.Resources.resources
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.csproj.GenerateResource.cache
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.csproj.CoreCompileInputs.cache
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.exe
+D:\лабиринт2\Labirint_original\Labirint\obj\Debug\Labirint.pdb
