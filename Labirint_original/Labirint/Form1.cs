@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Media;
 
 namespace Labirint
 {
@@ -15,7 +16,6 @@ namespace Labirint
     {
         int min;
         int sec;
-        private string name;
         static Random rnd = new Random();
         static int random = rnd.Next(0, 11);
         static int random_1 = rnd.Next(2, 8);
@@ -314,13 +314,19 @@ namespace Labirint
         private void button4_Click(object sender, EventArgs e)
         {
 
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            SaveFileDialog saveFile1 = new SaveFileDialog();
+            saveFile1.DefaultExt = "*.tsx";
+            saveFile1.Filter = "Test files|*.txt";
+            if (saveFile1.ShowDialog() == System.Windows.Forms.DialogResult.OK &&
+                saveFile1.FileName.Length > 0)
             {
-                name = saveFileDialog.FileName;
-                File.WriteAllText(name, textBox1.Text);
-
+                using (StreamWriter sw = new StreamWriter(saveFile1.FileName, true))
+                {
+                    sw.WriteLine(textBox1.Text);
+                    sw.Close();
+                }
             }
         }
     }
 }
+    

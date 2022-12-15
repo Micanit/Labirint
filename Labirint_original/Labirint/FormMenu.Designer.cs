@@ -81,16 +81,16 @@ namespace Labirint
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 182F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(740, 468);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(743, 468);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(249, 120);
+            this.button2.Location = new System.Drawing.Point(250, 120);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(243, 30);
+            this.button2.Size = new System.Drawing.Size(244, 30);
             this.button2.TabIndex = 4;
             this.button2.Text = "Начать игру";
             this.button2.UseVisualStyleBackColor = true;
@@ -101,7 +101,7 @@ namespace Labirint
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button3.Location = new System.Drawing.Point(3, 256);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(240, 26);
+            this.button3.Size = new System.Drawing.Size(241, 26);
             this.button3.TabIndex = 1;
             this.button3.Text = "Правила";
             this.button3.UseVisualStyleBackColor = true;
@@ -110,19 +110,19 @@ namespace Labirint
             // button5
             // 
             this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.Location = new System.Drawing.Point(498, 256);
+            this.button5.Location = new System.Drawing.Point(500, 256);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(239, 26);
+            this.button5.Size = new System.Drawing.Size(240, 26);
             this.button5.TabIndex = 3;
-            this.button5.Text = "button5";
+            this.button5.Text = "Рейтинг победителей";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(249, 256);
+            this.button4.Location = new System.Drawing.Point(250, 256);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(243, 26);
+            this.button4.Size = new System.Drawing.Size(244, 26);
             this.button4.TabIndex = 2;
             this.button4.Text = "Настройки";
             this.button4.UseVisualStyleBackColor = true;

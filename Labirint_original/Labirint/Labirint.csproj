@@ -125,5 +125,8 @@
   <ItemGroup>
     <None Include="Resources\Снимок.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sound_00604.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

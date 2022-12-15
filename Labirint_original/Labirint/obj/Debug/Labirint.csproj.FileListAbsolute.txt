@@ -56,3 +56,16 @@ D:\lala\Labirint_original\Labirint\obj\Debug\Labirint.csproj.GenerateResource.ca
 D:\lala\Labirint_original\Labirint\obj\Debug\Labirint.csproj.CoreCompileInputs.cache
 D:\lala\Labirint_original\Labirint\obj\Debug\Labirint.exe
 D:\lala\Labirint_original\Labirint\obj\Debug\Labirint.pdb
+D:\еще\Labirint_original\Labirint\bin\Debug\Labirint.exe.config
+D:\еще\Labirint_original\Labirint\bin\Debug\Labirint.exe
+D:\еще\Labirint_original\Labirint\bin\Debug\Labirint.pdb
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.csproj.AssemblyReference.cache
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.Form1.resources
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.FormMenu.resources
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.Properties.Resources.resources
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.Rules.resources
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.Settings.resources
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.csproj.GenerateResource.cache
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.csproj.CoreCompileInputs.cache
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.exe
+D:\еще\Labirint_original\Labirint\obj\Debug\Labirint.pdb
